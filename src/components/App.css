@@ -1,0 +1,58 @@
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+    background: black;
+    border-radius: 20px;
+    color: white;
+    height: 100vh;
+    padding: 5px;
+    position: relative;
+    width: 30%;
+    
+  }
+  
+  
+  .display {
+    font-size: 50px;
+    font-weight: 300;
+     padding: 1rem;
+    text-align: right;
+    height: 25%;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem 0;
+    }
+
+
+    
+  .bottom {
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background: white;
+    bottom: 5px;
+    left: 50%;
+    border-radius: 4px;
+    transform: translateX(-50%);
+  }
+
+  @media(max-width:768px){
+    .parent{
+      display:block;
+    } 
+    .App{
+      width: 100%;
+    }
+    .display{
+      height: 20%;
+    }
+  }
